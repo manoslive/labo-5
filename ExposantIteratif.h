@@ -14,5 +14,7 @@ class ExposantIteratif
 public:
 	ExposantIteratif(int base, int exposant);
 	operator double() const;
+
+	long CalculerFibonacciIteratif(int n);
 };
 #endif ExposantIteratif

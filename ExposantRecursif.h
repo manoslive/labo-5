@@ -14,5 +14,7 @@ class ExposantRecursif
 public:
 	ExposantRecursif(int base, int exposant);
 	operator double() const;
+
+	long CalculerFibonacciRecursif(int n);
 };
 #endif ExposantRecursif
