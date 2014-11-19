@@ -12,4 +12,6 @@ class ExposantRecursif
 public:
 	ExposantRecursif(int base, int exposant);
 	operator double() const;
+
+	long ClaculerFibonacciRecursif(int n);
 };
