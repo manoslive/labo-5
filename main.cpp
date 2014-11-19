@@ -7,5 +7,3 @@
 //	Programme qui permet qui implante de façon itérative et récursive		//
 //  l'évaluation pour n de la suite de Fibonacci							//
 //----------------------------------------------------------------------------//
-
-//regpkeofg
