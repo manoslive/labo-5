@@ -1,5 +1,5 @@
-#ifndef EXPOSANTITERATIF_H
-#define EXPOSANTITERATIF_H
+#ifndef EXPOSANTITERATIF_H_
+#define EXPOSANTITERATIF_H_
 //----------------------------------------------------------------------------//
 //  Labo 5 - Liste de Fibonacci    											//
 //	Shaun Cooper & Emmanuel Beloin										    //
@@ -17,4 +17,4 @@ public:
 
 	long CalculerFibonacciIteratif(int n);
 };
-#endif EXPOSANTITERATIF_H
+#endif

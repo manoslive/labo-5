@@ -1,5 +1,5 @@
-#define EXPOSANTRECURSIF_H
-#ifndef EXPOSANTRECURSIF_H
+#ifndef EXPOSANTRECURSIF_H_
+#define EXPOSANTRECURSIF_H_
 //----------------------------------------------------------------------------//
 //  Labo 5 - Liste de Fibonacci    											//
 //	Shaun Cooper & Emmanuel Beloin										    //
@@ -17,4 +17,4 @@ public:
 
 	long CalculerFibonacciRecursif(int n);
 };
-#endif EXPOSANTRECURSIF_H
+#endif
