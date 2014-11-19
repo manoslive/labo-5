@@ -13,5 +13,5 @@ public:
 	ExposantRecursif(int base, int exposant);
 	operator double() const;
 
-	long ClaculerFibonacciRecursif(int n);
+	long CalculerFibonacciRecursif(int n);
 };

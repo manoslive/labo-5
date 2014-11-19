@@ -13,5 +13,5 @@ public:
 	ExposantIteratif(int base, int exposant);
 	operator double() const;
 
-	long ClaculerFibonacciIteratif(int n);
+	long CalculerFibonacciIteratif(int n);
 };
