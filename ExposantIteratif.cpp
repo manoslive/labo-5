@@ -6,3 +6,10 @@
 //	ExposantRecursif.cpp													//
 //	Déclarations des méthodes d'un ExposantIteratif							//
 //----------------------------------------------------------------------------//
+
+#include "ExposantIteratif.h"
+
+long ExposantIteratif::CalculerFibonacciIteratif(int n)
+{
+
+}
