@@ -9,3 +9,7 @@
 
 #include "ExposantRecursif.h"
 
+long ExposantRecursif::CalculerFibonacciRecursif(int n)
+{
+
+}
