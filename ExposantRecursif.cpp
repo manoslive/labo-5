@@ -6,3 +6,6 @@
 //	ExposantRecursif.cpp													//
 //	Déclarations des méthodes d'un ExposantRecursif							//
 //----------------------------------------------------------------------------//
+
+#include "ExposantRecursif.h"
+

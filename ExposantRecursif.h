@@ -1,3 +1,5 @@
+#define ExposantRecursif
+#ifndef ExposantRecursif
 //----------------------------------------------------------------------------//
 //  Labo 5 - Liste de Fibonacci    											//
 //	Shaun Cooper & Emmanuel Beloin										    //
@@ -13,3 +15,4 @@ public:
 	ExposantRecursif(int base, int exposant);
 	operator double() const;
 };
+#endif ExposantRecursif

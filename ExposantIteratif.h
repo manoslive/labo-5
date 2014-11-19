@@ -1,3 +1,5 @@
+#define ExposantIteratif
+#ifndef ExposantIteratif
 //----------------------------------------------------------------------------//
 //  Labo 5 - Liste de Fibonacci    											//
 //	Shaun Cooper & Emmanuel Beloin										    //
@@ -13,3 +15,4 @@ public:
 	ExposantIteratif(int base, int exposant);
 	operator double() const;
 };
+#endif ExposantIteratif
