@@ -25,6 +25,7 @@ long CalculerFibonacciIteratif(int n)
 			reproducteurs = totale;
 		}
 	}
+	return reproducteurs;
 }
 
 long CalculerFibonacciRecursif(int nombreDeMois)
