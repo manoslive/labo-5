@@ -24,24 +24,45 @@ ExposantIteratif::operator double() const
 }
 double ExposantIteratif::CalculeExposant()
 {
+	//double resultat = GetBase();
+	//if (GetExposant() == 0) return 1;
+	//else if (GetExposant() == 1) return GetBase();
+	//if (GetExposant() > 1)
+	//{
+	//	for (int i = 0; i < GetExposant()-1; i++)
+	//	{
+	//		resultat += resultat * GetBase();
+	//	}
+	//	return resultat;
+	//}
+	//else if (GetExposant() < 0)
+	//{
+	//	for (int i = 0; i < GetExposant(); i--)
+	//	{
+	//		resultat += (GetBase()*GetBase());
+	//	}
+	//	return resultat;
+	//}
+
+	if (GetExposant() == 0) return 1;
+
 	double resultat = GetBase();
+
 	if (GetExposant() > 0)
 	{
-		for (int i = 0; i < GetExposant()-1; i++)
-		{
-			resultat += resultat * GetBase();
-		}
-		return resultat;
-	}
-	else
-	{
-		for (int i = 0; i < GetExposant(); i--)
-		{
-			resultat += (GetBase()*GetBase());
-		}
+		for (int i = 1; i < GetExposant(); i++)
+			resultat *= GetBase();
+
 		return resultat;
 	}
 
+	if (GetExposant() < 0)
+	{
+		for (int i = GetExposant(); i > 0; i--)
+			resultat *= GetExposant() * GetBase() /2;
+
+		return 1 / resultat;
+	}
 }
 double ExposantIteratif::GetBase() const
 {
