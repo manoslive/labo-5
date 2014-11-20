@@ -61,10 +61,6 @@ int main()
    ExposantRecursif Exp1(2, 3);
    Exp1.CalculExposant(2, 3);
 	ExposantIteratif exposantIteratif(5, 5);
-	cout << exposantIteratif.CalculeExposant()<<endl;
-
-   cout << "VERSION RECURSIVE: " << endl;
-   cout << CalculerFibonacciRecursif(8) << endl;
-	  
+   cout << exposantIteratif.CalculeExposant() << endl;
     return 0;
 }
