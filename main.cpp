@@ -25,6 +25,7 @@ long CalculerFibonacciIteratif(int n)
 			reproducteurs = totale;
 		}
 	}
+	return reproducteurs;
 }
 
 long CalculerFibonacciRecursif(int nombreDeMois)
@@ -47,7 +48,6 @@ long CalculerFibonacciRecursif(int nombreDeMois)
 
 int main()
 {
-   cout << CalculerFibonacciRecursif(2);
-   return 0;
+	//cout << CalculerFibonacciRecursif(2) << endl;
 	cout << CalculerFibonacciIteratif(6) << endl;
 }
