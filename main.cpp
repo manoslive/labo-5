@@ -7,3 +7,16 @@
 //	Programme qui permet qui implante de façon itérative et récursive		//
 //  l'évaluation pour n de la suite de Fibonacci							//
 //----------------------------------------------------------------------------//
+
+long CalculerFibonacciIteratif(int n)
+{
+	if (n >= 3)
+	{
+		while ()
+	}
+}
+
+int main()
+{
+
+}

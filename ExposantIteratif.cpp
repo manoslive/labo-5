@@ -6,3 +6,34 @@
 //	ExposantRecursif.cpp													//
 //	Déclarations des méthodes d'un ExposantIteratif							//
 //----------------------------------------------------------------------------//
+
+#include "ExposantIteratif.h"
+
+ExposantIteratif::ExposantIteratif(int base, int exposant)
+{
+	SetBase(base);
+	SetExposant(exposant);
+}
+ExposantIteratif::operator double() const
+{
+
+}
+
+
+int ExposantIteratif::GetBase() const
+{
+	return base_;
+}
+int ExposantIteratif::GetExposant() const
+{
+	return exposant_;
+}
+
+void ExposantIteratif::SetBase(int base)
+{
+	base_ = base;
+}
+void ExposantIteratif::SetExposant(int exposant)
+{
+	exposant_ = exposant;
+}
