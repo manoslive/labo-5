@@ -9,7 +9,7 @@
 
 #include "ExposantIteratif.h"
 
-ExposantIteratif::ExposantIteratif(int base, int exposant)
+ExposantIteratif::ExposantIteratif(double base, double exposant)
 {
 	SetBase(base);
 	SetExposant(exposant);
@@ -18,22 +18,42 @@ ExposantIteratif::operator double() const
 {
 	return 0;
 }
+double ExposantIteratif::CalculeExposant()
+{
+	double resultat = GetBase();
+	if (GetExposant() > 0)
+	{
+		for (int i = 0; i < GetExposant()-1; i++)
+		{
+			resultat += resultat * GetBase();
+		}
+		return resultat;
+	}
+	else
+	{
+		for (int i = 0; i < GetExposant(); i--)
+		{
+			resultat += (GetBase()*GetBase());
+		}
+		return resultat;
+	}
 
-
-int ExposantIteratif::GetBase() const
+}
+double ExposantIteratif::GetBase() const
 {
 	return base_;
 }
-int ExposantIteratif::GetExposant() const
+double ExposantIteratif::GetExposant() const
 {
 	return exposant_;
 }
 
-void ExposantIteratif::SetBase(int base)
+void ExposantIteratif::SetBase(double base)
 {
-	base_ = base;
+	if (base >= 0)
+		base_ = base;
 }
-void ExposantIteratif::SetExposant(int exposant)
+void ExposantIteratif::SetExposant(double exposant)
 {
 	exposant_ = exposant;
 }

@@ -11,16 +11,18 @@
 
 class ExposantIteratif
 {
-	int base_;
-	int exposant_;
+	double base_;
+	double exposant_;
 public:
-	ExposantIteratif(int base, int exposant);
+	ExposantIteratif(double base, double exposant);
 	operator double() const;
 
-	int GetBase() const;
-	int GetExposant() const;
+	double CalculeExposant();
 
-	void SetBase(int base);
-	void SetExposant(int exposant);
+	double GetBase() const;
+	double GetExposant() const;
+
+	void SetBase(double base);
+	void SetExposant(double exposant);
 };
 #endif
