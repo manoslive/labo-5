@@ -8,6 +8,9 @@
 // l'évaluation pour n de la suite de Fibonacci							//
 //----------------------------------------------------------------------------//
 
+#include <iostream>
+using namespace std;
+
 long CalculerFibonacciIteratif(int n)
 {
 	int reproducteurs = 0;
@@ -22,10 +25,29 @@ long CalculerFibonacciIteratif(int n)
 			reproducteurs = totale;
 		}
 	}
-	return reproducteurs;
+}
+
+long CalculerFibonacciRecursif(int nombreDeMois)
+{
+   int valeur = 0;
+   if (nombreDeMois >= 3)
+   {
+      if (nombreDeMois <= 0)
+         return 0;
+
+      if (nombreDeMois == 1 || nombreDeMois == 2)
+         return 1;
+
+      if (valeur != 0)
+         return valeur;
+   }
+   valeur = CalculerFibonacciRecursif(nombreDeMois - 1) + CalculerFibonacciRecursif(nombreDeMois - 2);
+   return valeur;
 }
 
 int main()
 {
+   cout << CalculerFibonacciRecursif(2);
+   return 0;
 	cout << CalculerFibonacciIteratif(6) << endl;
 }
