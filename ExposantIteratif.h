@@ -1,5 +1,7 @@
+#ifndef EXPOSANTITERATIF_H_
+#define EXPOSANTITERATIF_H_
 //----------------------------------------------------------------------------//
-//  Labo 5 - Liste de Fibonacci    											//
+// Labo 5 - Liste de Fibonacci    											//
 //	Shaun Cooper & Emmanuel Beloin										    //
 //	Créé le : 19-11-14													    //
 //	Dernière modification : 19-11-14									        //
@@ -21,3 +23,4 @@ public:
 	void SetBase(int base);
 	void SetExposant(int exposant);
 };
+#endif
