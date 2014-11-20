@@ -48,6 +48,8 @@ long CalculerFibonacciRecursif(int nombreDeMois)
 
 int main()
 {
-	//cout << CalculerFibonacciRecursif(2) << endl;
 	cout << CalculerFibonacciIteratif(8) << endl;
+    cout << CalculerFibonacciRecursif(2);
+	  
+    return 0;
 }
