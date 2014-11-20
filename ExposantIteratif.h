@@ -11,10 +11,16 @@
 
 class ExposantIteratif
 {
+	int base_;
+	int exposant_;
 public:
 	ExposantIteratif(int base, int exposant);
 	operator double() const;
 
-	long CalculerFibonacciIteratif(int n);
+	int GetBase() const;
+	int GetExposant() const;
+
+	void SetBase(int base);
+	void SetExposant(int exposant);
 };
 #endif
