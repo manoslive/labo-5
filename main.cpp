@@ -13,7 +13,7 @@ using namespace std;
 
 long CalculerFibonacciIteratif(int n)
 {
-	int reproducteurs = 0;
+	int reproducteurs = 1;
 	int anciens = 1;
 	int totale;
 	if (n >= 3)
@@ -49,5 +49,5 @@ long CalculerFibonacciRecursif(int nombreDeMois)
 int main()
 {
 	//cout << CalculerFibonacciRecursif(2) << endl;
-	cout << CalculerFibonacciIteratif(6) << endl;
+	cout << CalculerFibonacciIteratif(8) << endl;
 }
