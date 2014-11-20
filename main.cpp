@@ -10,13 +10,22 @@
 
 long CalculerFibonacciIteratif(int n)
 {
+	int reproducteurs = 0;
+	int anciens = 1;
+	int totale;
 	if (n >= 3)
 	{
-		while ()
+		for (int i = 3; i <= n; i++)
+		{
+			totale = reproducteurs + anciens;
+			anciens = reproducteurs;
+			reproducteurs = totale;
+		}
 	}
+	return reproducteurs;
 }
 
 int main()
 {
-
+	cout << CalculerFibonacciIteratif(6) << endl;
 }

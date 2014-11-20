@@ -16,7 +16,7 @@ ExposantIteratif::ExposantIteratif(int base, int exposant)
 }
 ExposantIteratif::operator double() const
 {
-
+	return 0;
 }
 
 
