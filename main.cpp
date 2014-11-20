@@ -13,7 +13,7 @@ using namespace std;
 
 long CalculerFibonacciIteratif(int n)
 {
-	int reproducteurs = 0;
+	int reproducteurs = 1;
 	int anciens = 1;
 	int totale;
 	if (n >= 3)
@@ -39,7 +39,7 @@ int main()
 {
    cout << "VERSION RECURSIVE: " << endl;
    cout << CalculerFibonacciRecursif(8) << endl;
-    
+  
    cout << "VERSION ITERATIVE: " << endl;
 	cout << CalculerFibonacciIteratif(6) << endl;
    return 0;
