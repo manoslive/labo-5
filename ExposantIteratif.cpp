@@ -8,7 +8,11 @@
 //----------------------------------------------------------------------------//
 
 #include "ExposantIteratif.h"
-
+ExposantIteratif::ExposantIteratif()
+{
+	SetBase(0);
+	SetExposant(0);
+}
 ExposantIteratif::ExposantIteratif(double base, double exposant)
 {
 	SetBase(base);

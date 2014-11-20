@@ -18,8 +18,8 @@ using namespace std;
 	CalculerFibonacciIteratif
 	Intrant: n(int) -- nombre de mois
 	Extrant: long --nb total de lapins
-	Description: Suite de fibonacci de fàcon itérative
-*/
+	Description: Suite de fibonacci de façon itérative
+	*/
 long CalculerFibonacciIteratif(int n)
 {
 	int reproducteurs = 1;
@@ -41,26 +41,42 @@ long CalculerFibonacciIteratif(int n)
 CalculerFibonacciIteratif
 Intrant: nombreDeMois(int)
 Extrant: long --nb total de lapins
-Description: Suite de fibonacci de fàcon récursive
+Description: Suite de fibonacci de façon récursive
 */
 long CalculerFibonacciRecursif(int nombreDeMois)
 {
-   if (nombreDeMois == 0 || nombreDeMois == 1)  return nombreDeMois;
-   else
-      return CalculerFibonacciRecursif(nombreDeMois - 1) + CalculerFibonacciRecursif(nombreDeMois - 2);
+	if (nombreDeMois == 0 || nombreDeMois == 1)  return nombreDeMois;
+	else
+		return CalculerFibonacciRecursif(nombreDeMois - 1) + CalculerFibonacciRecursif(nombreDeMois - 2);
 }
 
 int main()
 {
- //  cout << "VERSION RECURSIVE: " << endl;
- //  cout << CalculerFibonacciRecursif(8) << endl;
+	//  cout << "VERSION RECURSIVE: " << endl;
+	//  cout << CalculerFibonacciRecursif(8) << endl;
 	//  
- //  cout << "VERSION ITERATIVE: " << endl;
-	//cout << CalculerFibonacciIteratif(6) << endl;
+	//  cout << "VERSION ITERATIVE: " << endl;
+	//  cout << CalculerFibonacciIteratif(6) << endl;
+	int exposant;
+	double base;
+	do
+	{
+		cout << "-------" << "0 a la 0 pour mettre fin au programme" << "-------" << endl;
+		cout << "Entrez la base" << endl;
+		cin >> base;
+		cout << "Entrez l'exposant" << endl;
+		cin >> exposant;
+		if (base != 0 && exposant != 0)
+		{
+			ExposantRecursif expRecursif(base, exposant);
+			ExposantIteratif exposantIteratif(base, exposant);
+			cout << "Reponse iterative: " << exposantIteratif.CalculeExposant() << endl;
+			cout << "Reponse recursive: " << expRecursif.CalculExposant(base,exposant) << endl;
+		}
+		else
+			cout << "Fin du programme\nBonne fin de journee" << endl;
+	} while (base != 0 && exposant != 0);
 
-   ExposantRecursif Exp1(2, 3);
-   Exp1.CalculExposant(2, 3);
-	ExposantIteratif exposantIteratif(5, 5);
-   cout << exposantIteratif.CalculeExposant() << endl;
-    return 0;
+	return 0;
+
 }

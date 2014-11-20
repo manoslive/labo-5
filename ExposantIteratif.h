@@ -14,6 +14,7 @@ class ExposantIteratif
 	double base_;
 	double exposant_;
 public:
+	ExposantIteratif();
 	ExposantIteratif(double base, double exposant);
 	operator double() const;
 

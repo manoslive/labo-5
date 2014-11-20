@@ -11,18 +11,19 @@
 
 class ExposantRecursif
 {
-   int base_;
-   int exposant_;
+	int base_;
+	int exposant_;
 public:
-   ExposantRecursif(int base, int exposant);
-   operator double() const;
+	ExposantRecursif();
+	ExposantRecursif(int base, int exposant);
+	operator double() const;
 
-   int GetBase() const;
-   int GetExposant() const;
+	double GetBase() const { return base_; };
+	int GetExposant() const{ return exposant_; };
 
-   void SetBase(int base);
-   void SetExposant(int exposant);
+	void SetBase(double base);
+	void SetExposant(int exposant);
 
-   double CalculExposant(int base, int exposant);
+	double CalculExposant(int base, int exposant);
 };
 #endif
