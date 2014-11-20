@@ -8,8 +8,11 @@
 // l'évaluation pour n de la suite de Fibonacci							//
 //----------------------------------------------------------------------------//
 
+#include "ExposantRecursif.h"
+#include "ExposantIteratif.h"
 #include <iostream>
 using namespace std;
+
 
 /*
 	CalculerFibonacciIteratif
@@ -49,10 +52,14 @@ long CalculerFibonacciRecursif(int nombreDeMois)
 
 int main()
 {
-   cout << "VERSION RECURSIVE: " << endl;
-   cout << CalculerFibonacciRecursif(8) << endl;
-	  
-   cout << "VERSION ITERATIVE: " << endl;
-	cout << CalculerFibonacciIteratif(6) << endl;
+ //  cout << "VERSION RECURSIVE: " << endl;
+ //  cout << CalculerFibonacciRecursif(8) << endl;
+	//  
+ //  cout << "VERSION ITERATIVE: " << endl;
+	//cout << CalculerFibonacciIteratif(6) << endl;
+
+   ExposantRecursif Exp1(2, 3);
+   Exp1.CalculExposant(2, 3);
+
     return 0;
 }

@@ -6,7 +6,6 @@
 //	ExposantRecursif.cpp											                  		//
 //	Déclarations des méthodes d'un ExposantRecursif			         				//
 //----------------------------------------------------------------------------//
-
 #include "ExposantRecursif.h"
 
 ExposantRecursif::ExposantRecursif(int base, int exposant)
@@ -19,21 +18,17 @@ ExposantRecursif::operator double() const
    return 0;
 }
 
+double ExposantRecursif::CalculExposant(int base, int exposant)
+{
+   if (exposant == 0) return exposant;
+   if (exposant > 0)
+   {
+      if (exposant == 1)  return base;
+      else
+         return base* CalculExposant(base, exposant - 1);
+   }
+   else if (exposant < 0)
+   {
 
-int ExposantRecursif::GetBase() const
-{
-   return base_;
-}
-int ExposantRecursif::GetExposant() const
-{
-   return exposant_;
-}
-
-void ExposantRecursif::SetBase(int base)
-{
-   base_ = base;
-}
-void ExposantRecursif::SetExposant(int exposant)
-{
-   exposant_ = exposant;
+   }
 }

@@ -22,5 +22,7 @@ public:
 
    void SetBase(int base);
    void SetExposant(int exposant);
+
+   double CalculExposant(int base, int exposant);
 };
 #endif
