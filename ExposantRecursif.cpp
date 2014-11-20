@@ -9,26 +9,31 @@
 
 #include "ExposantRecursif.h"
 
-long ExposantRecursif::CalculerFibonacciRecursif(int n)
+ExposantRecursif::ExposantRecursif(int base, int exposant)
 {
-   int valeur = 0;
-   if (n >= 3)
-   {
-      if (n <= 0)
-      {
-         return 0;
-      }
+   SetBase(base);
+   SetExposant(exposant);
+}
+ExposantRecursif::operator double() const
+{
+   return 0;
+}
 
-      if (n == 1 || n == 2)
-      {
-         return 1;
-      }
 
-      if (valeur != 0)
-      {
-         return valeur;
-      }
-   }
-   valeur = CalculerFibonacciRecursif(n - 1) + CalculerFibonacciRecursif(n - 2);
-   return valeur;
+int ExposantRecursif::GetBase() const
+{
+   return base_;
+}
+int ExposantRecursif::GetExposant() const
+{
+   return exposant_;
+}
+
+void ExposantRecursif::SetBase(int base)
+{
+   base_ = base;
+}
+void ExposantRecursif::SetExposant(int exposant)
+{
+   exposant_ = exposant;
 }
