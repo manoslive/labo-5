@@ -11,6 +11,12 @@
 #include <iostream>
 using namespace std;
 
+/*
+	CalculerFibonacciIteratif
+	Intrant: n(int) -- nombre de mois
+	Extrant: long --nb total de lapins
+	Description: Suite de fibonacci de fàcon itérative
+*/
 long CalculerFibonacciIteratif(int n)
 {
 	int reproducteurs = 1;
@@ -28,6 +34,12 @@ long CalculerFibonacciIteratif(int n)
 	return reproducteurs;
 }
 
+/*
+CalculerFibonacciIteratif
+Intrant: nombreDeMois(int)
+Extrant: long --nb total de lapins
+Description: Suite de fibonacci de fàcon récursive
+*/
 long CalculerFibonacciRecursif(int nombreDeMois)
 {
    if (nombreDeMois == 0 || nombreDeMois == 1)  return nombreDeMois;
@@ -39,8 +51,8 @@ int main()
 {
    cout << "VERSION RECURSIVE: " << endl;
    cout << CalculerFibonacciRecursif(8) << endl;
-  
+	  
    cout << "VERSION ITERATIVE: " << endl;
 	cout << CalculerFibonacciIteratif(6) << endl;
-   return 0;
+    return 0;
 }
