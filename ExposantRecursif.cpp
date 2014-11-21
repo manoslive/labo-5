@@ -37,19 +37,12 @@ void ExposantRecursif::SetExposant(int exposant)
 	exposant_ = exposant;
 }
 
-double ExposantRecursif::CalculExposant(int base, int exposant)
+double ExposantRecursif::CalculExposant(double base, double exposant)
 {
-	double calcul;
-	if (exposant == 0) // Si l'exposant vaut 0, on retourne 1. C'est là où la récursivité se termine
+	if (exposant == 0) // Dernière étape de la récursivité, on retourne 1
 		return 1;
-	calcul = CalculExposant(base, exposant / 2); // On affecte le résultat de CalculExposant dans calcul
-	if (exposant % 2 == 0) // Si l'exposant est pair
-		return calcul*calcul;
-	else // Sinon
-	{
-		if (exposant > 0) // Dans le cas où l'exposant est positif
-			return base*calcul*calcul;
-		else // Dans le cas où l'exposant est négatif
-			return (calcul*calcul) / base;
-	}
+	if (exposant > 0) // L'exposant est positif	
+	return base * (CalculExposant(base, exposant - 1));
+	if (exposant < 0) // L'exposant est négatif
+		return 1 / base * (CalculExposant(base, exposant + 1));
 }

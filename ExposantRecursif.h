@@ -33,6 +33,6 @@ public:
 	Extrant: le résultat en double
 	Description: Permet de calculer, de facon récursive, une puissance
 	*/
-	double CalculExposant(int base, int exposant);
+	double CalculExposant(double base, double exposant);
 };
 #endif
