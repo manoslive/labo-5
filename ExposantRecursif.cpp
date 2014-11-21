@@ -29,15 +29,28 @@ ExposantRecursif::operator double() const
 void ExposantRecursif::SetBase(double base)
 {
 	if (base >= 0)
-		base_ = base;
+	base_ = base;
 }
 
 void ExposantRecursif::SetExposant(int exposant)
 {
-	exposant_ = exposant;
+		exposant_ = exposant;
 }
 
-double ExposantRecursif::CalculExposant()
+double ExposantRecursif::CalculExposant(int base, int exposant)
 {
 
+	double calcul;
+	if (exposant == 0)
+		return 1;
+	calcul = CalculExposant(base, exposant / 2);
+	if (exposant % 2 == 0)
+		return calcul*calcul;
+	else
+	{
+		if (exposant > 0)
+			return base*calcul*calcul;
+		else
+			return (calcul*calcul) / base;
+	}
 }
