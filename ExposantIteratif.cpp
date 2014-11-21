@@ -24,20 +24,20 @@ ExposantIteratif::operator double() const
 }
 double ExposantIteratif::CalculeExposant()
 {
-	if (GetExposant() == 0) return 1;
-	double resultat = GetBase();
+	if (GetExposant() == 0) return 1; //si l'exposant est 0, retourne 1
+	double resultat = GetBase(); //intialise le resultat à la base
 
-	if (GetExposant() > 0)
+	if (GetExposant() > 0) //if l'exposant est positif
 	{
-		for (int i = 1; i < GetExposant(); i++)
+		for (int i = 1; i < GetExposant(); i++)//boucle qui permet d'effectuer le calcul le nombre de fois de l'exposant
 			resultat *= GetBase();
 
 		return resultat;
 	}
 
-	if (GetExposant() < 0)
+	if (GetExposant() < 0) //if l'exposant est négatif
 	{
-		for (int i = 1; i < -GetExposant(); i++)
+		for (int i = 1; i < -GetExposant(); i++)//boucle qui permet d'effectuer le calcul le nombre de fois de l'exposant
 			resultat *= GetBase();
 
 		return 1 / resultat;
