@@ -72,7 +72,7 @@ int main()
 			ExposantIteratif exposantIteratif(base, exposant);
 			cout << endl;
 			cout << "Reponse iterative: " << exposantIteratif.CalculeExposant() << endl;
-			cout << "Reponse recursive: " << expRecursif.CalculExposant() << endl;
+			cout << "Reponse recursive: " << expRecursif.CalculExposant(base,exposant) << endl;
 		}
 		else
 			cout << "Fin du programme\nBonne fin de journee" << endl;
