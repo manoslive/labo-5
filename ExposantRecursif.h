@@ -15,7 +15,7 @@ class ExposantRecursif
 	int exposant_;
 public:
 	ExposantRecursif();
-	ExposantRecursif(int base, int exposant);
+	ExposantRecursif(double base, int exposant);
 	operator double() const;
 
 	double GetBase() const { return base_; };

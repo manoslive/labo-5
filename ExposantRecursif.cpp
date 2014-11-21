@@ -16,7 +16,7 @@ ExposantRecursif::ExposantRecursif()
 	SetExposant(0);
 }
 
-ExposantRecursif::ExposantRecursif(int base, int exposant)
+ExposantRecursif::ExposantRecursif(double base, int exposant)
 {
 	SetBase(base);
 	SetExposant(exposant);
@@ -34,7 +34,6 @@ void ExposantRecursif::SetBase(double base)
 
 void ExposantRecursif::SetExposant(int exposant)
 {
-	if (exposant >= 0)
 		exposant_ = exposant;
 }
 
