@@ -37,8 +37,8 @@ double ExposantIteratif::CalculeExposant()
 
 	if (GetExposant() < 0)
 	{
-		for (int i = 1; i < -GetExposant(); i++)
-			resultat *= GetBase();
+		for (int i = GetExposant(); i > 0; i--)
+			resultat *= GetExposant() * GetBase() /2;
 
 		return 1 / resultat;
 	}
