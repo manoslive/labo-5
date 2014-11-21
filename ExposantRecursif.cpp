@@ -40,6 +40,7 @@ void ExposantRecursif::SetExposant(int exposant)
 
 double ExposantRecursif::CalculExposant(int base, int exposant)
 {
+
 	double calcul;
 	if (exposant == 0)
 		return 1;
