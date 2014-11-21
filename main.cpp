@@ -66,13 +66,13 @@ int main()
 		cin >> base;
 		cout << "Entrez l'exposant: ";
 		cin >> exposant;
-		if (base != 0 && exposant != 0)
+		if (base != 0 && exposant != 0) 
 		{
 			ExposantRecursif expRecursif(base, exposant);
 			ExposantIteratif exposantIteratif(base, exposant);
 			cout << endl;
 			cout << "Reponse iterative: " << exposantIteratif.CalculeExposant() << endl;
-			cout << "Reponse recursive: " << expRecursif.CalculExposant() << endl;
+			cout << "Reponse recursive: " << expRecursif.CalculExposant(base, exposant) << endl;
 		}
 		else
 			cout << "Fin du programme\nBonne fin de journee" << endl;
