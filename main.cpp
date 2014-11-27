@@ -1,11 +1,11 @@
 //----------------------------------------------------------------------------//
-// Labo 5 - Liste de Fibonacci                                             //
+// Labo 5 - Liste de Fibonacci                                              //
 //	Shaun Cooper & Emmanuel Beloin                                          //
 //	Créé le : 19-11-14										                //
 //	Dernière modification : 19-11-14                                        //
 //	Main.cpp                                                                //
 //	Programme qui permet qui implante de façon itérative et récursive		//
-// l'évaluation pour n de la suite de Fibonacci							//
+// l'évaluation pour n de la suite de Fibonacci							    //
 //----------------------------------------------------------------------------//
 
 #include "ExposantRecursif.h"
@@ -66,7 +66,7 @@ int main()
 		cin >> base;
 		cout << "Entrez l'exposant: ";
 		cin >> exposant;
-		if (base != 0 && exposant != 0) 
+		if (base != 0 && exposant != 0)
 		{
 			ExposantRecursif expRecursif(base, exposant);
 			ExposantIteratif exposantIteratif(base, exposant);

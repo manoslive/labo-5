@@ -34,8 +34,8 @@ double ExposantIteratif::CalculeExposant()
 
 		return resultat;
 	}
-
-	if (GetExposant() < 0) //if l'exposant est négatif
+	else
+	//if (GetExposant() < 0) //if l'exposant est négatif
 	{
 		for (int i = 1; i < -GetExposant(); i++)//boucle qui permet d'effectuer le calcul le nombre de fois de l'exposant
 			resultat *= GetBase();
@@ -54,7 +54,7 @@ double ExposantIteratif::GetExposant() const
 
 void ExposantIteratif::SetBase(double base)
 {
-	if (base >= 0)
+	//if (base >= 0)
 		base_ = base;
 }
 void ExposantIteratif::SetExposant(double exposant)
